@@ -1,0 +1,48 @@
+\documentclass[12pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage[style=apa,backend=biber]{biblatex} % or ieee, numeric, etc.
+
+% Bibliography file
+\usepackage[style=apa,backend=biber]{biblatex} % You can use ieee, numeric, etc.
+\addbibresource{reference.bib}
+
+\title{Literature Review Notes}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Introduction}
+Brief description of your literature review topic.
+
+\section{Notes from Literature}
+
+\subsection{Example Source}
+\textbf{Reference:} \cite{Samir2025} \\
+\textbf{DOI/URL:} \url{https://doi.org/10.1038/s41598-025-89277-6} \\
+\textbf{Source type:} Journal article \\
+\textbf{Main topic/keywords:} HTPEMFC Modelling,  \\
+
+\textbf{Excerpt/Quote:}
+\begin{quote}
+``High membrane water content improves proton conductivity, but excess water in the gas channels can cause flooding.'' (p. 45)
+\end{quote}
+
+\textbf{Your notes/interpretation:} This is important for my humidifier modeling. I can reference this when discussing optimal inlet RH.  
+
+\textbf{Tags:} water management, humidification
+
+\newpage
+\section{All References}
+\printbibliography
+
+\end{document}
